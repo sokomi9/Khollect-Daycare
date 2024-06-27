@@ -41,10 +41,13 @@ if (isset($_POST['submit'])) {
 }
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<?php include('templates/header.php'); ?>
+
+<?php
+include('config/dbconn.php');
+include('templates/navbar.php');
+include('templates/header.php');
+?>
 
 <section class="container grey-text">
     <h4 class="center">Add Item</h4>
@@ -66,6 +69,6 @@ if (isset($_POST['submit'])) {
         </div>
     </form>
 </section>
+
 <?php include('templates/footer.php');?>
 
-</html>

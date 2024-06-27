@@ -1,0 +1,62 @@
+.custom-nav {
+  height: 13%; /* Adjust height as needed */
+  align-items: center;
+}
+
+.custom-nav .container {
+  align-items: center;
+}
+
+.custom-nav .brand-logo img {
+  height: 90%; /* Adjust the height of the logo as needed */
+  margin-top: 0px; /* Adjust the top margin as needed */
+  margin-bottom: 20px; /* Adjust the top margin as needed */
+}
+
+.custom-nav ul {
+  align-items: center;
+  height: 100%; /* Ensure the ul element takes full height of the nav */
+  margin-top: 10px;
+}
+
+/* Style the footer */
+.footer {
+  background: grey; /* Background color */
+  padding: 10px 0; /* Padding for the footer */
+  text-align: center; /* Center text alignment */
+  margin-top: auto; /* Push the footer to the bottom */
+  height: 10%;
+}
+
+.landing-dark-bg {
+  background-size: cover; /* Ensures the background image covers the entire element */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  height: 80vh; /* Makes the div take the full height of the viewport */
+  width: 100%; /* Ensures the div takes the full width of the viewport */
+  display: flex; /* Flexbox layout to center content */
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+}
+
+/* Ensure the container div has the appropriate padding and height */
+.container {
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between; /* Adjusts spacing between images */
+  margin: 20px;
+  margin-top: 4%;
+}
+
+.image-row img {
+  max-width: 32%; /* Ensures the images fit within the row */
+  height: auto;
+  border: 2px solid #ddd; /* Adds a border around the images */
+  border-radius: 10px; /* Adds rounded corners to the images */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for better visual separation */
+}
