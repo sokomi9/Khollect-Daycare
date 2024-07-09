@@ -1,24 +1,19 @@
 <?php 
-include('templates/navbar.php'); 
 include('config/dbconn.php');
+include('templates/navbar.php');
+include('templates/header.php');
 
 if (isset($_GET['id'])) {
    $id = mysqli_real_escape_string($con, $_GET['id']);
-   $sql = "SELECT * FROM tables1 WHERE id=$id";
+   $sql = "SELECT * FROM table1 WHERE id=$id";
    $result = mysqli_query($con, $sql);
    $entry = mysqli_fetch_assoc($result);
    mysqli_free_result($result);
    mysqli_close($con);
    print_r($entry);
 }
+
 ?>
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<?php include('templates/header.php'); ?>
 
    <div class="container center">
       <?php if ($entry): ?>
@@ -31,6 +26,6 @@ if (isset($_GET['id'])) {
           <p>No such child came in!</p>
       <?php endif; ?>   
    </div>
+
 <?php include('templates/footer.php'); ?>
 
-</html>
