@@ -20,7 +20,7 @@ if (isset($_GET['id'])) {
 
 <?php include('templates/header.php'); ?>
 
-   <!-- <div class="container center">
+   <div class="container center">
       <?php if ($entry): ?>
          <h4><?php echo htmlspecialchars_decode($entry['child']); ?></h4>
          <p>Created by: <?php echo htmlspecialchars($entry['email']); ?></p>
@@ -30,7 +30,7 @@ if (isset($_GET['id'])) {
       <?php else: ?>
           <p>No such child came in!</p>
       <?php endif; ?>   
-   </div> -->
+   </div>
 <?php include('templates/footer.php'); ?>
 
 </html>
