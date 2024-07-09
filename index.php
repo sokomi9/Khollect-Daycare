@@ -1,7 +1,7 @@
 <?php
 include('config/dbconn.php');
 include('templates/navbar.php');
-$sql = 'SELECT email, child, received_by,items FROM table1 ORDER BY entry_time';
+$sql = 'SELECT email, child, received_by,items, id FROM table1 ORDER BY entry_time';
 $result = mysqli_query($con, $sql);
 $entries = mysqli_fetch_all($result, MYSQLI_ASSOC);
 mysqli_free_result($result);
@@ -46,7 +46,7 @@ mysqli_close($con);
                         </ul>
                     </div>
                     <div class="card-action right-align">
-                    <a href="" class="brand-text">MORE INFO</a>
+                    <a href="details.php?id=<?php echo $entry['id']; ?>" class="brand-text">MORE INFO</a>
                     </div>
                 </div>
             </div>

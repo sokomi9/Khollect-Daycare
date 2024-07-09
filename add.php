@@ -44,8 +44,9 @@ if (isset($_POST['submit'])) {
       $client = mysqli_real_escape_string($con, $_POST['received_by']);
       $specs = mysqli_real_escape_string($con, $_POST['items']);
       $entry_time = date('Y-m-d H:i:s'); // Current timestamp
+      $id = mysqli_real_escape_string($con, $_POST['id']);
 
-    $sql = "INSERT INTO table1(email, child, received_by, items, entry_time) VALUES('$email', '$item', '$client', '$specs', '$entry_time')";  
+    $sql = "INSERT INTO table1(email, child, received_by, items, entry_time, id) VALUES('$email', '$item', '$client', '$specs', '$entry_time', '$id')";  
 
       if (mysqli_query($con, $sql)) {
          header('Location:index.php');
